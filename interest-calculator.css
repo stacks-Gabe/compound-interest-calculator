@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(blue, navy);
+}
+
+h1 {
+  font-family: Handjet;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+}
+
+img {
+  max-width: 20%;
+  max-height: 20%;
+  transition: transform 0.6s ease;
+}
+
+img:hover {
+  transform: rotate(360deg);
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.text-and-inputs {
+  display: grid;
+  grid-template-columns: 10em auto;
+  font-family: Handjet;
+  font-size: 20px;
+  padding: 10px;
+  place-items: center;
+  border: solid 10px purple;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.images-container img:hover {
+  animation: spin 1s linear;
+}
+
+output {
+  font-family: Handjet;
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: purple;
+  padding: 5px;
+  margin: 0px;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+#accumulated {
+  font-size: 20px;
+}
+
+.handjet-minecraft-font {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "ELGR" 1, "ELSH" 2;
+}
+
+footer {
+  font-family: Handjet;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="interest-calculator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class = dog><img src="images/IMG_6700.jpg" alt="cutest dog in the world"></div>
+      <div> <h1> Compound Interest Calculator! </h1></div>
+      <div class = dog><img src="images/IMG_6710.jpg" alt="other cutest dog in the world"></div>
+    </header>
+  </body>
+  <main>
+    <div class = "text-and-inputs">
+      <form>
+        <div> Principle </div>
+        <input id = "principle" />
+        <div> Period </div>
+        <select id = "period">
+          <option value="360">daily</option>
+          <option value="12">monthly</option>
+          <option value="4">quarterly</option>
+          <option value="1">yearly</option> 
+        </select>
+        <div>APR</div>
+          <input type = "range" id = "apr" min="0.25" max="50" step = "1"/>
+        <div> Years </div>
+        <input type = "number" id = "years"/>
+      </form>
+      <p>Interest accumulated is: <output id="accumulated" /></p>
+    </div>
+    <output id = "result"> The total is: ? </output>
+  </main>
+  <footer>
+    <a href="https://codesandbox.io/p/sandbox/compound-interest-calculator-xk9v42?file=%2Findex.html%3A42%2C5"> Source Code </a>
+</html>
